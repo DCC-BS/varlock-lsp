@@ -2,6 +2,8 @@
 
 A Language Server Protocol (LSP) implementation for [Varlock](https://varlock.com) environment configuration files (`.env`, `.env.schema`, `.env.*`).
 
+This project is an LSP implementation of [@env-spec VSCode Extension](https://github.com/dmno-dev/varlock/tree/main/packages/vscode-plugin).
+
 ## Features
 
 - **Autocomplete** for decorators, data types, type options, resolver functions, and config item references
@@ -103,6 +105,10 @@ command = "varlock-lsp"
 #### VS Code / Other Editors
 
 Configure your editor to use `varlock-lsp` as the language server for `.env` files. The server communicates via stdio.
+
+## Vibe Coded
+
+This project is entirely [vibe coded](https://en.wikipedia.org/wiki/Vibe_coding).
 
 ## Development
 
