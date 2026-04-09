@@ -1,0 +1,15 @@
+# Add this to your Helix languages.toml (~/.config/helix/languages.toml)
+# or to the project-level .helix/languages.toml
+
+[[language]]
+name = "env-spec"
+scope = "source.env-spec"
+file-types = [
+  { glob = "**/.env" },
+  { glob = "**/.env.*" },
+]
+comment-token = "#"
+language-servers = ["varlock-lsp"]
+
+[language-server.varlock-lsp]
+command = "varlock-lsp"
